@@ -1,3 +1,5 @@
+package Thuc_hanh;
+
 import java.util.Scanner;
 
 public class SimpleShapes {
