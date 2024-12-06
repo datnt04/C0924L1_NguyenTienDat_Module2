@@ -2,19 +2,16 @@ package SS4;
 import java.util.Scanner;
 
 public class QuadraticEquation {
-    // Các thuộc tính private
     private double a;
     private double b;
     private double c;
 
-    // Constructor với 3 tham số
     public QuadraticEquation(double a, double b, double c) {
         this.a = a;
         this.b = b;
         this.c = c;
     }
 
-    // Các phương thức getter
     public double getA() {
         return a;
     }
@@ -27,12 +24,10 @@ public class QuadraticEquation {
         return c;
     }
 
-    // Phương thức tính delta
     public double getDelta() {
         return Math.pow(b, 2) - 4 * a * c;
     }
 
-    // Phương thức tính nghiệm thứ nhất
     public double getRoot1() {
         double delta = getDelta();
         if (delta >= 0) {
