@@ -1,3 +1,5 @@
+package SS2;
+
 public class DisplayPrimeNumbers {
     public static void main(String[] args) {
         System.out.println("Các số nguyên tố nhỏ hơn 100:");

@@ -1,4 +1,4 @@
-package Thuc_hanh;
+package SS2;
 
 public class PrimeNumbers {
     public static void main(String[] args) {
