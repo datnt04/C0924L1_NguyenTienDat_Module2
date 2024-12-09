@@ -14,7 +14,7 @@ public class Fan {
     public Fan() {
         this.speed = SLOW; // Mặc định là SLOW
         this.on = false;   // Mặc định là tắt
-        this.radius = 5;   // Mặc định bán kính là 5
+        this.radius = 5;   // Mặc định bán kính là
         this.color = "blue"; // Mặc định màu là blue
     }
 
