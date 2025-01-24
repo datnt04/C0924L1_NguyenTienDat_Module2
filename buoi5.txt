@@ -1,0 +1,47 @@
+1. Khái niệm kế thừa
+Kế thừa (Inheritance) là cơ chế cho phép một lớp (class) mới thừa hưởng 
+các thuộc tính và phương thức của một lớp đã có (lớp cha).
+Mục đích của kế thừa
+Tái sử dụng mã nguồn, giảm trùng lặp.
+Dễ dàng mở rộng tính năng của chương trình.
+Tăng tính bảo trì, phát triển phần mềm.
+2. Đặc điểm của kế thừa trong Java
+Những gì được kế thừa:
+Các thuộc tính và phương thức không có từ khóa private.
+Phương thức có từ khóa protected hoặc public.
+Những gì không được kế thừa:
+Các thuộc tính và phương thức khai báo private.
+Constructor của lớp cha.
+3. Từ khóa final dùng để làm gì?
+Với biến: Giá trị không thể thay đổi sau khi gán.
+Với phương thức: Không thể ghi đè (override).
+Với class: Không thể kế thừa.
+4. Class Object trong Java
+Là lớp cha của tất cả các lớp trong Java. Mọi class đều kế thừa trực tiếp 
+hoặc gián tiếp từ Object.
+Một số phương thức của Object:
+toString(): Trả về chuỗi mô tả đối tượng.
+equals(): So sánh hai đối tượng có bằng nhau không.
+hashCode(): Trả về mã băm của đối tượng.
+clone(): Tạo bản sao của đối tượng.
+5. Đa hình là gì?
+Đa hình (Polymorphism) là khả năng một hành động có thể được thực 
+hiện theo nhiều cách khác nhau, dựa vào lớp đối tượng.
+Đa hình trong Java:
+Compile-time (Overloading): Đa hình tại thời điểm biên dịch.
+Runtime (Overriding): Đa hình tại thời điểm chạy.
+6. Phân biệt Overloading và Overriding
+Đặc điểm	                          Overloading	                                                                        Overriding
+Ngữ cảnh	                        Cùng một lớp	                                                                     Lớp cha và lớp con
+Mục đích	     Cung cấp nhiều cách thực hiện cho một phương thức với các tham số khác nhau	              Thay đổi hoặc mở rộng hành vi của phương thức lớp cha
+Chữ ký phương thức	               Phải khác nhau	                                                                              Phải giống nhau
+Tính đa hình 	                       Không liên quan	                                                                     Hỗ trợ tính đa hình
+Từ khóa sử dụng     	                 Không cần	                                                                 @Override (không bắt buộc nhưng khuyến khích)
+7. Ép kiểu là gì?
+Ép kiểu (Casting) là chuyển đổi dữ liệu từ kiểu này sang kiểu khác.
+Các loại ép kiểu trong Java:
+Ép kiểu tự động: Chuyển từ kiểu nhỏ sang kiểu lớn (upcasting).
+Ví dụ: int -> long.
+Ép kiểu tường minh: Chuyển từ kiểu lớn sang kiểu nhỏ 
+(downcasting).
+Ví dụ: double -> int

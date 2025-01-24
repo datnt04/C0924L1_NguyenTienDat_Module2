@@ -1,0 +1,34 @@
+1. Khái niệm tính trừu tượng? Tính trừ tượng thể hiện ở đầu trong 
+java?
+-Là cơ chế ẩn đi các cơ chế phức tạp và chỉ hiển thị thông tin cần 
+thiết
+-Được sử dụng ở Abstract class và Interface
+2. Abstract class là gì? Đặc điểm?
+-Là lớp không thể khởi tạo trực tiếp, dung để chứa phương thức 
+chung. nó có thể chứa:
+Các phương thức trừu tượng (abstract methods) không có thân hàm.
+Các phương thức thông thường có thân hàm.
+Đặc điểm:
+-Không thể khởi tạo một đối tượng từ abstract class.
+-Phải được kế thừa (extends) bởi các lớp con.
+-Lớp con phải cài đặt tất cả các phương thức trừu tượng trong abstract class (trừ khi chính lớp con đó cũng là abstract).
+-Abstract class có thể chứa:
+-Biến thành viên (instance variables).
+-Constructor.
+-Các phương thức có thân hàm.
+3. Interface là gì? Đặc điểm interface?
+-Là một tập hợp các phương thức trừu tượng
+-Interface là một Template (khuôn mẫu), nó không phải là một lớp đối tượng.
+-Để khai báo một Interface ta dùng từ khóa interface để thay cho từ khóa class.
+-Tất cả các hàm trong interface đều ở dạng khai báo và không được định nghĩa (giống lớp abstract).
+-Là cấu trúc trong OOP cho phép các class khác có thể implements.
+-Một đối tượng implement một interface thì nó phải khai báo và định nghĩa tất cả các hàm trong Interface.
+-Interface không thể khởi tạo.
+-Phương thức trong Interface bắt buộc toàn bộ là các phương thức trừu tượng.
+-Các phương thức trong Interface chỉ có thể được định nghĩa với khả năng là public và cũng không được định nghĩa nội dung.
+-Interface có thể được extends với nhau.
+-class có thể implements nhiều Interface
+4. Khi nào dùng Abstract class, khi nào dùng interface?
+-Khi một nhóm đối tượng có cùng bản chất kế thừa từ một class thì sử dụng abstract class.
+
+-Khi một nhóm đối tượng không có cùng bản chất nhưng chúng có hành động giống nhau thì sử dụng interface.

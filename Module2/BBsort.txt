@@ -1,0 +1,31 @@
+1. Sắp xếp nổi bọt (Bubble Sort)
+-Ý tưởng:
+* Liên tục so sánh 2 phần tử kề nhau, nếu chúng sắp xếp không đúng chỗ thì hoán đổi vị trí của chúng.
+
+* Lặp lại quá trình này nhiều lần, cho đến khi không còn hai phần tử cạnh nhau mà vị trí sắp xếp không đúng thì dừng.
+-Cách triển khai:
+BubbleSort(A,n)
+
+for i=1 to n-1 // lặp n-1 lần
+
+for j = 1 to n
+
+if aj > a j+1
+
+Đổi chỗ aj, aj+1
+2. Sắp xếp chọn (Selection Sort)
+-Ý tưởng:
+Tìm phần tử nhỏ nhất trong dãy chưa sắp xếp và đặt nó vào đúng vị trí ở đầu
+dãy.
+-Cách triển khai:
+1. Lặp qua từng vị trí trong mảng.
+2. Tìm phần tử nhỏ nhất trong dãy còn lại.
+3. Hoán đổi phần tử nhỏ nhất với phần tử tại vị trí hiện tại.
+3. Sắp xếp chèn (Insertion Sort)
+-Ý tưởng:
+Lấy từng phần tử từ dãy chưa sắp xếp, chèn nó vào đúng vị trí trong phần 
+dãy đã được sắp xếp.
+-Cách triển khai:
+1. Chia mảng thành 2 phần: đã sắp xếp và chưa sắp xếp.
+2. Lấy từng phần tử từ dãy chưa sắp xếp.
+3. Chèn phần tử đó vào vị trí thích hợp trong dãy đã sắp xếp.

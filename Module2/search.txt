@@ -1,0 +1,49 @@
+1.Ý tưởng thuật toán tìm kiếm tuyến tính?
+Duyệt toàn bộ danh sách, nếu có phần tử đó xuất hiện thì đánh dấu nó lại. Sau đó kiểm tra đánh dấu để biết phần tử đó có suất hiện hay không
+2.Cách triển khai thuật toán tìm kiếm tuyến tính?	
+for (mỗi phần tử trong danh sách) {
+if (match item == value) {
+return vị trí của phần tử;
+		}
+	}
+	return -1;
+3.Ý tưởng thuật toán tìm kiếm nhị phần?
+	NHỊ PHÂN = CHIA ĐÔI
+* 1. Tìm giá trị phần tử nằm giữa dây, gọi là X
+
+* 2. Nếu X == K thì X là kết quả và thông báo chỉ số
+
+* 3. Có 2 tỉnh huống:
+
+* Nếu X < K => Tìm kiếm ở nửa sau dây số
+
+• Nếu X > K => Tìm kiếm ở nửa đầu dây số
+
+* 4. Lập lại các bước cho đến khi tìm thấy, hoặc đến khi khu vực tìm kiếm là rồng (-1)
+4.Cách triển khai thuật toán tìm kiếm nhị phân
+
+BinarySearch(A, K)
+
+	left =1, right = n
+
+	while left <= right
+
+		mid = (left+right)/2 //'lay phan nguyen
+		if a[mid]==K
+
+			return mid
+
+		else if a[mid]<k
+
+			left = mid + 1
+
+		else
+
+			right = mid-1
+
+	return -1
+5.So sánh thuật toán tìm kiếm tuyến tính và tìm kiếm nhị phân
+-Độ phức tập O(n).Giải thuật tìm kiếm tuyến tính chỉ hiệu quả khi cần tìm kiếm trên một mảng/danh sách đủ nhỏ hoặc một mảng/danh sách chưa sắp thứ tự.
+( vì khi truy vấn k lần thì độ phức tạp sẽ tăng lên n*k)
+
+-Độ phức tập O(log2(n)).Giải thuật tìm kiếm nhị phân hiệu quả khi cần tìm kiếm trên một mảng/danh sách đủ lớn và đã sắp xếp thứ tự.

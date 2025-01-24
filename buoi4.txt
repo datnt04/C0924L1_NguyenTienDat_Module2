@@ -1,0 +1,23 @@
+1 . Từ khoá static được khai báo ở đầu?
+Từ khoá static được khai báo trước khai báo kiểu dữ liệu của biến hoặc phương thức trong lớp. 
+2. Mục đích sử dụng static để làm gì?
+-Từ khoá static dùng để khai báo các thành phần (biến, phương thức) mà không cần tạo đối tượng của lớp đó
+-Các thành phần static thuộc về lớp thay vì thuộc về các đối tượng. Điều này giúp tiết kiệm bộ nhớ và có thể truy cập trực tiếp từ lớp mà không cần khởi tạo đối tượng.
+3 . Ràng buộc static?
+chúng chỉ có thể truy cập các thành phần khác trong lớp cũng được khai báo là static.
+Không thể sử dụng từ khóa this hoặc super trong phương thức hoặc khối static.
+Các thành phần static được chia sẻ giữa tất cả các đối tượng của lớp, điều này có thể dẫn đến sự cạnh tranh giữa các đối tượng nếu không xử lý đúng cách.
+4. Access Modifier là gì? Các loại Access Modifier?
+ Access Modifier (các chỉ thị quyền truy cập) xác định phạm vi truy cập của các thành phần trong một lớp.
+public: Thành phần có thể được truy cập từ bất kỳ đâu.
+private: Thành phần chỉ có thể được truy cập trong cùng một lớp.
+protected: Thành phần có thể được truy cập trong cùng một lớp, trong các lớp con, và trong các lớp cùng gói (package).
+default (package-private): Nếu không khai báo access modifier, thành phần chỉ có thể truy cập trong cùng một gói (package).
+5 . Tính báo đóng trong Java? Làm thế nào để tạo được tính báo đóng? 
+Tính báo đóng (encapsulation) trong Java là một nguyên lý trong lập trình hướng đối tượng, giúp che giấu thông tin nội bộ của lớp và 
+chỉ cho phép truy cập thông qua các phương thức công khai (getter/setter). Điều này giúp bảo vệ dữ liệu và giảm thiểu sự thay đổi không mong muốn.
+
+Để tạo tính báo đóng:
+
+Đặt các biến thành private để không thể truy cập trực tiếp từ bên ngoài lớp.
+Cung cấp các phương thức công khai (getter/setter) để truy cập và thay đổi giá trị của biến

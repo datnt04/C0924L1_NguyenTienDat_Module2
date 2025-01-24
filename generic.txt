@@ -1,0 +1,32 @@
+Generic là gì? ưu và nhược điểm generic?
+Generics trong java là một cách để xác định các kiểu cụ thể cho các lớp và phương thức trong ngữ cảnh khác nhau.
+Ưu điểm:
+Tính an toàn
+Tái sử dụng
+Không cần ép kiểu
+Nhược điểm:
+Phức tạp
+Không hỗ trợ kiểu nguyên thủy
+Cơ chế hoạt động của Stack? một số method của stack trong java
+là một cấu trúc dữ liệu tuyến tính có thể được truy cập chỉ ở một trong các đầu của nó để lưu trữ và truy xuất dữ liệu.(Last In, First Out (LIFO) data structure)
+Method:
+- clear() — Clear the stack
+– isEmpty() — Check to see if the stack is empty
+– push(el) — Put the element el on the top of the stack
+– pop() — Take the topmost element from the stack
+– top() — Return the topmost element in the stack without 
+removing it
+Cơ chế hoạt động của Queue? Cá method làm việc với Queue
+ là cấu trúc dữ liệu tuyến tính tuân theo quy tắc "Vào trước, ra trước" (FIFO), nghĩa là phần tử nào được thêm vào trước sẽ bị xóa trước.
+Method:
+clear() — Xóa hàng đợi
+– isEmpty() — Kiểm tra xem hàng đợi có trống không
+– enqueue(el) — Đặt phần tử el vào cuối hàng đợi
+– dequeue() — Lấy phần tử đầu tiên khỏi hàng đợi
+– front() — Trả về phần tử đầu tiên trong hàng đợi mà không
+xóa nó đôi khi là peek() thay vì là front(). 
+Các class triển khai interface Queue?	
+-LinkedLists
+-ArrayDeque
+-PriorityQueue
+

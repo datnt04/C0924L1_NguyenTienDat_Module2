@@ -1,0 +1,29 @@
+1. Phân biệt Exception và Error?
+Exception:
+-Là sự kiện xảy ra trong quá trình chạy chương trình, có thể xử lý được 
+(catchable).
+-Thường do lập trình viên gây ra hoặc xuất hiện khi có lỗi trong logic của 
+chương trình.
+1.Error:
+-Là các vấn đề nghiêm trọng, không thể khôi phục hoặc xử lý được trong 
+chương trình.
+-Thường xảy ra do các vấn đề bên ngoài tầm kiểm soát của lập trình viên, 
+chẳng hạn như vấn đề về tài nguyên hệ thống (out of memory).
+2. Các loại Exception?
+-Chechked: Lỗi được phát sinh trong tình huống chạy chương trình 
+thông thường.
+-Unchecked: Được tạo ra trong tình huống được coi là “không thể cứu 
+vãn” cho một chương trình(được tạo ra trong lúc đã chạy chương 
+trình)
+3. Các cách xử lý excepltion?
+-Sử dụng try-catch
+-Sử dụng finally
+-Sử dụng từ khóa throw và throws
+-Sử dụng nhiều khối catch
+4.  Những lưu ý khi sử dụng try-catch
+-Đối tượng trong khối catch sau phải cùng cấp hoặc có cấp lớn lớn hơn
+đối tượng thuộc catch trước.
+-Nếu không biết đoạn mã lệnh có khả năng gây lỗi gì thì sử dụng lớp 
+Exception để bắt.
+5. Finally dùng để làm gì?
+-Khối finally mà sẽ luôn luôn thực thi vô điều kiện sau try/catch
