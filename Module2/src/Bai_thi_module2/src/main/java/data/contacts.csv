@@ -1,3 +1,2 @@
-Số điện thoại,Nhóm,Họ tên,Giới tính,Địa chỉ,Ngày sinh,Email
-Contact{phoneNumber='0971234567', group='CodeGym', name='Nguyễn Văn A', gender='Nam', address='Mỹ Đình - Hà Nội', birthDate='1989-01-01', email='vana@codegym.vn'}
-Contact{phoneNumber='0971234568', group='Bạn bè', name='Nguyễn Thị B', gender='Nữ', address='Thanh Xuân - Hà Nội', birthDate='1990-01-01', email='nguyenthib@codegym.vn'}
+Số điện thoại,Nhóm,Họ tên,Giói tính,Địa chỉ,Ngày sinh,Email
+0123456789,a,nguyen dat,nam,da,null,dat@gmail.com

@@ -44,8 +44,7 @@ public class ContactController {
             case 1:
                 System.out.println("Danh sách từ bộ nhớ");
                 contactService.displayContacts(); 
-                System.out.println("Danh sách từ file");
-                contactService.displayContactsFromFile();
+                
                 break;
             case 2:
                 contactService.addContact(); 
@@ -60,7 +59,8 @@ public class ContactController {
                 contactService.searchContact();
                 break;
             case 6:
-                contactService.loadContactsFromFile();                break;
+                System.out.println("danh sách từ file:");
+                contactService.displayContactsFromFile();                break;
             case 7:
                   contactService.saveContactsToFile();
                 break;

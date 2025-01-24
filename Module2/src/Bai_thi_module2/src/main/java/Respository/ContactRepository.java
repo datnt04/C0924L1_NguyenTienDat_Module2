@@ -42,19 +42,23 @@ public class ContactRepository implements IContactRepository {
     }
 
     @Override
-    public void writeToFile(List<Contact> contacts) {
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter(FILE_PATH))) {
-            String header = "Số điện thoại,Nhóm,Họ tên,Giới tính,Địa chỉ,Ngày sinh,Email";
-            bw.write(header);
-            bw.newLine();
+   public void writeToFile(List<Contact> contacts) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(FILE_PATH))) { 
+            writer.write("Số điện thoại,Nhóm,Họ tên,Giói tính,Địa chỉ,Ngày sinh,Email");
+            writer.newLine(); 
 
             for (Contact contact : contacts) {
-                bw.write(contact.toString());
-                bw.newLine();
+                writer.write(contact.getPhoneNumber() + "," +
+                             contact.getGroup() + "," +
+                             contact.getName() + "," +
+                             contact.getGender() + "," +
+                             contact.getAddress() + "," +
+                             contact.getBirthDate() + "," +
+                             contact.getEmail());
+                writer.newLine(); 
             }
-            System.out.println("Đã lưu danh bạ vào file thành công!");
         } catch (IOException e) {
-            System.out.println("Lỗi khi lưu file: " + e.getMessage());
+            e.printStackTrace();
         }
     }
 }
